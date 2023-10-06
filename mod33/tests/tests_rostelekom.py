@@ -6,12 +6,12 @@ from pages.rstk_id_authorized import IdAuthorizedPage
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-# !!!ОСТОРОЖНО!!!
-# При запуске всех тестов может сработать защита ростелекома, что приведет к блокировке IP
+# ATTENTION (ВНИМАНИЕ)!!
+# При запуске всех тестов может сработать защита Ростелеком, что приведет к блокировке IP
 # Команда для запуска тестов
 # python -m pytest -v tests/tests_rostelekom.py
-# Все тесты рабочие, ничего не должно падать
-# Если падает, вероятно срабатывает защита ростелекома
+# Все тесты рабочие, падать не должны
+# Если вдруг падает, значит скорее всего срабатывает защита Ростелеком
 
 @pytest.fixture(scope="session")
 def driver(request):
